@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Log In View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LogInViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="w46-bd-uIv"/>
+                    <connections>
+                        <segue destination="9WS-Pi-P4s" kind="presentation" identifier="forgotVC" id="BYZ-dF-U6G"/>
+                        <segue destination="v1d-gP-cdX" kind="presentation" identifier="showGreetingsVC" id="IDU-Ii-FSn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="-86"/>
+        </scene>
+        <!--Forgot View Controller-->
+        <scene sceneID="yzS-yB-bYF">
+            <objects>
+                <viewController id="9WS-Pi-P4s" customClass="ForgotViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uaD-jJ-MPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="dzP-JR-Qr4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="las-XD-WB1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084" y="714"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="8Gh-qV-bTa">
+            <objects>
+                <viewController id="v1d-gP-cdX" customClass="GreetingsViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PPw-3Z-QDC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ahk-dJ-Nxu">
+                                <rect key="frame" x="123" y="267" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="SgR-Gh-c1j" kind="unwind" unwindAction="unwindFor:" id="d7t-6n-7y6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fei-Ib-hMz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="X41-qJ-T75"/>
+                    <navigationItem key="navigationItem" id="Y3a-Sg-FuQ"/>
+                    <connections>
+                        <outlet property="logOutButton" destination="ahk-dJ-Nxu" id="zUq-v9-mNz"/>
+                        <segue destination="Onq-PN-poT" kind="presentation" identifier="informationTBC" id="w6F-jc-EZu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Gz-x9-5ZB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="SgR-Gh-c1j" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2136" y="-87"/>
+        </scene>
+        <!--name-->
+        <scene sceneID="4nC-dX-PNK">
+            <objects>
+                <viewController id="co0-9w-HLj" customClass="NameViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wto-iW-Nyu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="2BA-G4-iXq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="name" image="person" catalog="system" id="0cU-Mh-zjM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gMy-Ya-Eit" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="713"/>
+        </scene>
+        <!--occupation-->
+        <scene sceneID="MPv-R7-1jf">
+            <objects>
+                <viewController id="gO9-M0-Qku" customClass="OccupationViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jF7-Q7-0fr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="yBe-24-XVt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="occupation" image="rectangle.inset.filled.and.person.filled" catalog="system" id="hvO-5y-c4E"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knV-bt-hkf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4367" y="712"/>
+        </scene>
+        <!--age-->
+        <scene sceneID="Jg1-h0-Mx6">
+            <objects>
+                <viewController id="4sh-LA-5MD" customClass="AgeViewController" customModule="lesson206" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xss-qG-Sd8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4aZ-Fs-8nT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="age" image="person.badge.clock" catalog="system" id="DVo-L6-lcN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gaZ-LA-nu7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5399" y="716"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wig-ca-1Hf">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Onq-PN-poT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e2m-yv-WYT">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="co0-9w-HLj" kind="relationship" relationship="viewControllers" id="FYl-Sq-yLh"/>
+                        <segue destination="gO9-M0-Qku" kind="relationship" relationship="viewControllers" id="Tmp-a1-rwB"/>
+                        <segue destination="4sh-LA-5MD" kind="relationship" relationship="viewControllers" id="CRy-EM-Sgt"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ava-RJ-4bV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3332" y="-88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.badge.clock" catalog="system" width="128" height="125"/>
+        <image name="rectangle.inset.filled.and.person.filled" catalog="system" width="128" height="87"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
